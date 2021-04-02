@@ -2,7 +2,7 @@
 
 How to run the program?
 
-1) 'TA_Work1.scala' - In Master branch, Control program/ scala file having the main method (which calls the processDebtPlanAndPayments and prits results).
+1) Run 'TA_Work1.scala' - In Master branch, Control program/ scala file having the main method (which calls the processDebtPlanAndPayments and prits results).
 Used ScalaTest as testing framework - test cases can be run like - testOnly TA_Work1Test, testOnly  DebtsTest, testOnly PaymentPlansTest, testOnly PaymentsTest
 Note - used Intellij IDE and sbt for build
 3) Run the main method in 'TA_Work1.scala' to print the results in json lines format
