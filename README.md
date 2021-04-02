@@ -30,5 +30,6 @@ c) Test case classes - TA_Work1Test.scala, DebtsTest.scala, PaymentPlansTest.sca
 - consider the edge cases to think about mutability vs immutability of data/ variables
 - when billions of debts, paymentplans, payments are flowing into system what would be architecture / system parallel processing using tech like Spark processing
 , ingesting data into a db, Integration of spark job/ program with analytical db like Apache Druid so that near real time analytical queries can be done etc
+- would like to collaborate and do things and learn
 6) Any design decisions or assumptions you made.
 At the heart of system is Debt, payment plans, payments, payment dates and amounts rules thereof and requirements (accordingly logic) need to be reviewed.
