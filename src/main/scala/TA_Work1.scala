@@ -71,10 +71,13 @@ object TA_Work1 {
       println(debt)
     }
 
+    //printing the result in requisite format
+    print("#### Resultant Debt objects ###")
     printDebtsToJson(debts_lst_after_processing)
 
   } //main method
 
+  //helper method to print the List of Debts objects to json
   def printDebtsToJson(debtslst: List[Debts]): Unit = {
 
     for (t <- debtslst) {

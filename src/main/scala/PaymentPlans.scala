@@ -3,6 +3,7 @@ import java.util.Date
 
 import net.liftweb.json.{DefaultFormats, parse}
 
+// case class definition for single PaymentPlan
 case class PaymentPlans(amount_to_pay: Double, debt_id: Long, id: Long, installment_amount: Double, installment_frequency: String, start_date: String) {
 
 
@@ -13,6 +14,7 @@ case class PaymentPlans(amount_to_pay: Double, debt_id: Long, id: Long, installm
   }
 }
 
+// getPaymentPlans gives the list of paymentplans (source of data) reading from a http service , used net.liftweb.json for parsing
 object PaymentPlans {
   def getPaymentPlans(): List[PaymentPlans] = {
 

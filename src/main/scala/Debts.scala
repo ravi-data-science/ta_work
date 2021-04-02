@@ -2,6 +2,7 @@ import java.util.Date
 
 import net.liftweb.json.{DefaultFormats, parse}
 
+// case class definition for single Debt
 case class Debts(id: Long, amount: Double) {
   var isInPaymentPlan: Boolean = false
   var remaining_amount = amount;
@@ -10,6 +11,7 @@ case class Debts(id: Long, amount: Double) {
   override def toString = "id:" + id + "\t" + "amount:" + "\t" + amount + "\t" + "isInPaymentPlan:" + isInPaymentPlan+"\t"+"remaining_amount:"+remaining_amount+"\t"+"next_payment_due_date:"+next_payment_due_date
 }
 
+// getDebts gives the list of debts (source of data) reading from a http service , used net.liftweb.json for parsing
 object Debts {
 
   def getDebts(): List[Debts] = {

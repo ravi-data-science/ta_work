@@ -3,6 +3,7 @@ import java.util.Date
 
 import net.liftweb.json.{DefaultFormats, parse}
 
+// case class definition for single Payment
 case class Payments(payment_plan_id: Long, amount: Double, date: String) {
   var dateStrToRealDate: Date = {
 
@@ -12,6 +13,7 @@ case class Payments(payment_plan_id: Long, amount: Double, date: String) {
 
 }
 
+// getPayments gives the list of payments (source of data) reading from a http service , used net.liftweb.json for parsing
 object Payments {
   def getPayments(): List[Payments] = {
 
