@@ -65,11 +65,8 @@ object TA_Work1 {
     println("payment list objects:" + payments_lst)
     val debts_lst_after_processing = processDebtPlanAndPayments(debts_lst, paymentplans_lst, payments_lst)
 
-    println("debt list after making all relevant computations::")
-    println(debts_lst_after_processing)
-//    for (debt <- debts_lst_after_processing) {
-//      println(debt)
-//    }
+    //println("debt list after making all relevant computations::")
+    //println(debts_lst_after_processing)
 
     //printing the result in requisite format
     print("#### Resultant Debt objects ###")
