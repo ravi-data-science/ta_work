@@ -54,7 +54,7 @@ object TA_Work1 {
 
   def main(args: Array[String]): Unit = {
 
-
+// Data fetched from http service json processing with net.liftweb.json package
     val debts_lst = Debts.getDebts()
     println("debts list objects:" + debts_lst)
 
@@ -67,9 +67,9 @@ object TA_Work1 {
 
     println("debt list after making all relevant computations::")
     println(debts_lst_after_processing)
-    for (debt <- debts_lst_after_processing) {
-      println(debt)
-    }
+//    for (debt <- debts_lst_after_processing) {
+//      println(debt)
+//    }
 
     //printing the result in requisite format
     print("#### Resultant Debt objects ###")
