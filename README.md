@@ -1,5 +1,7 @@
 # ta_work
 
+How to run the program?
+
 1) Control program/ scala file having the main method is 'TA_Work1.scala'
 2) Run the main method in 'TA_Work1.scala' to print the results in json lines format
 Example - 
