@@ -2,8 +2,10 @@
 
 How to run the program?
 
-1) 'TA_Work1.scala' - In Master branch, Control program/ scala file having the main method (which calls the processDebtPlanAndPayments and prits results)
-2) Run the main method in 'TA_Work1.scala' to print the results in json lines format
+1) 'TA_Work1.scala' - In Master branch, Control program/ scala file having the main method (which calls the processDebtPlanAndPayments and prits results).
+Used ScalaTest as testing framework - test cases can be run like - testOnly TA_Work1Test, testOnly  DebtsTest, testOnly PaymentPlansTest, testOnly PaymentsTest
+Note - used Intellij IDE and sbt for build
+3) Run the main method in 'TA_Work1.scala' to print the results in json lines format
 Example - 
 
 {"id":1,"remaining_amount":75.0,"isInPaymentPlan":true,"next_payment_due_date":"2020-08-08T07:00:00Z","amount":100.0}
@@ -31,7 +33,7 @@ c) Test case classes - TA_Work1Test.scala, DebtsTest.scala, PaymentPlansTest.sca
 - "io.circe" is also good package for json processing for scala projects. Need to review different standard packages for specific type of processing
 - Need to review java calendar (better to use joda) for dates operations and test
 - when billions of debts, paymentplans, payments are flowing into system what would be architecture / system parallel processing using tech like Spark processing
-, ingesting data into a db, Integration of spark job/ program with analytical db like Apache Druid so that near real time analytical queries can be done etc
+, ingesting data into a db, Integration of spark job/ program with analytical db like Apache Druid so that near real time analytical queries can be done, Ingesting data into streaming tech like kafka (with data sla of say 14 days) , integration with tech like elastic search for data discovery etc.
 - would like to collaborate and do things and learn
 6) Any design decisions or assumptions you made.
 At the heart of system is Debt, payment plans, payments, payment dates and amounts rules thereof and requirements (accordingly logic) need to be reviewed.
