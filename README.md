@@ -25,6 +25,7 @@ b) TA_Work1.scala - Processing object having main method which calls the method 
 c) Test case classes - TA_Work1Test.scala, DebtsTest.scala, PaymentPlansTest.scala, PaymentsTest.scala 
 
 5) what you think you would have done differently given more time.
+- More inline documentation
 - Validation of test cases, Would have provided more test coverage , edge cases
 - consider the edge cases to think about mutability vs immutability of data/ variables
 - when billions of debts, paymentplans, payments are flowing into system what would be architecture / system parallel processing using tech like Spark processing
