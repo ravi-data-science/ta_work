@@ -29,6 +29,7 @@ c) Test case classes - TA_Work1Test.scala, DebtsTest.scala, PaymentPlansTest.sca
 - Validation of test cases, Would have provided more test coverage , edge cases
 - consider the edge cases to think about mutability vs immutability of data/ variables
 - "io.circe" is also good package for json processing for scala projects. Need to review different standard packages for specific type of processing
+- Need to review java calendar (better to use joda) for dates operations and test
 - when billions of debts, paymentplans, payments are flowing into system what would be architecture / system parallel processing using tech like Spark processing
 , ingesting data into a db, Integration of spark job/ program with analytical db like Apache Druid so that near real time analytical queries can be done etc
 - would like to collaborate and do things and learn
