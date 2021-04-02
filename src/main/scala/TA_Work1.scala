@@ -1,35 +1,15 @@
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.util.{Calendar, Date}
 
-import net.liftweb.json.DefaultFormats
-import net.liftweb.json._
-import java.util.Calendar
-import java.time.LocalDateTime
-import scala.collection.mutable._
-import net.liftweb.json._
-import net.liftweb.json.Serialization.write
-import net.liftweb.json.JsonAST
-import net.liftweb.json.JsonDSL._
-//import net.liftweb.json.Printer.{compact,pretty}
+import org.json4s.native.Json
 
 object TA_Work1 {
 
-  def main(args: Array[String]): Unit = {
-
-    val debts_lst = Debts.getDebts()
-    println("debts list objects:" + debts_lst)
-
-    val paymentplans_lst = PaymentPlans.getPaymentPlans()
-    println("payment plans list objects:" + paymentplans_lst)
-
-    val payments_lst = Payments.getPayments()
-    println("payment list objects:" + payments_lst)
-
+  def processDebtPlanAndPayments(debts_lst: List[Debts], paymentplans_lst: List[PaymentPlans], payments_lst: List[Payments]): List[Debts] = {
 
     val cal = Calendar.getInstance
 
-//Iterating through all Debt objects
-    // for calculating "is_in_payment_plan"
+    //Iterating through all Debt objects
+    // for calculating "is_in_payment_plan" & remaining_amount
     for (debt <- debts_lst) {
 
       //Iterating through all PaymentPlans objects
@@ -65,17 +45,49 @@ object TA_Work1 {
         }
 
       }
-      println("checking debt object after setting isInPaymentPlan:" + debt)
+      //println("checking debt object after setting isInPaymentPlan:" + debt)
 
     }
-    println("debt list after making all relevant computations::"+debts_lst)
-    implicit val formats = DefaultFormats
-    val debtsLstJson = write(debts_lst)
-    println("debtsLstJson::"+debtsLstJson.toString)
-    //println(compact(JsonAST.render(json)))
 
-  }//main method
-}//object TA_Work1
+    return debts_lst
+  }
+
+  def main(args: Array[String]): Unit = {
+
+
+    val debts_lst = Debts.getDebts()
+    println("debts list objects:" + debts_lst)
+
+    val paymentplans_lst = PaymentPlans.getPaymentPlans()
+    println("payment plans list objects:" + paymentplans_lst)
+
+    val payments_lst = Payments.getPayments()
+    println("payment list objects:" + payments_lst)
+    val debts_lst_after_processing = processDebtPlanAndPayments(debts_lst, paymentplans_lst, payments_lst)
+
+    println("debt list after making all relevant computations::")
+    println(debts_lst_after_processing)
+    for (debt <- debts_lst_after_processing) {
+      println(debt)
+    }
+
+    printDebtsToJson(debts_lst_after_processing)
+
+  } //main method
+
+  def printDebtsToJson(debtslst: List[Debts]): Unit = {
+
+    for (t <- debtslst) {
+      val debtsMap = Map("id" -> t.id, "amount" -> t.amount,
+        "isInPaymentPlan" -> t.isInPaymentPlan,
+        "remaining_amount" -> t.remaining_amount,
+        "next_payment_due_date" -> t.next_payment_due_date)
+      println(Json(org.json4s.DefaultFormats).write(debtsMap))
+    }
+
+
+  }
+} //object TA_Work1
 
 
 

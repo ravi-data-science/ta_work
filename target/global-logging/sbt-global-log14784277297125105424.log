@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly TA_Work1Test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/ravikrovvidi/Documents/work/trueaccord_proj/target/scala-2.13/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTA_Work1Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt having a payment plan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have the flag isInPaymentPlan set to true[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt Not having a payment plan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have the flag isInPaymentPlan set to false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt remaining_amount[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be zero when amount_to_pay in paymentplan is zero[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt next_payment_due_date is null[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should if no payment plan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 90 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed Apr 1, 2021, 5:49:40 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

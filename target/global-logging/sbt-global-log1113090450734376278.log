@@ -1,0 +1,89 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 14.0.1)
+[debug]       Load.loadUnit: plugins took 65.111055ms
+[debug]       Load.loadUnit: defsScala took 0.260098ms
+[debug] [Loading] Scanning directory /Users/ravikrovvidi/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ravikrovvidi/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 17.718333 ms
+[debug]           Load.resolveProject(global-plugins) took 33.719963ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/ravikrovvidi/.sbt/1.0/plugins, plugins: List(<none>))) took 70.15325ms
+[debug] [Loading] Done in /Users/ravikrovvidi/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 89.754953ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.200592ms
+[debug]     Load.loadUnit(file:/Users/ravikrovvidi/.sbt/1.0/plugins/, ...) took 161.929459ms
+[debug]   Load.apply: load took 662.053491ms
+[debug]   Load.apply: resolveProjects took 5.178695ms
+[debug]   Load.apply: finalTransforms took 65.761431ms
+[debug]   Load.apply: config.delegates took 7.7619ms
+[debug]   Load.apply: Def.make(settings)... took 319.284506ms
+[debug]   Load.apply: structureIndex took 124.913648ms
+[debug]   Load.apply: mkStreams took 1.47951ms
+[info] loading global plugins from /Users/ravikrovvidi/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 2545.517614ms
+[debug]           Load.loadUnit: plugins took 18.545737ms
+[debug]           Load.loadUnit: defsScala took 0.009898ms
+[debug] [Loading] Scanning directory /Users/ravikrovvidi/Documents/work/trueaccord_proj/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ravikrovvidi/Documents/work/trueaccord_proj/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.42693 ms
+[debug]               Load.resolveProject(trueaccord_proj-build) took 0.816637ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id trueaccord_proj-build, base: /Users/ravikrovvidi/Documents/work/trueaccord_proj/project, plugins: List(<none>))) took 2.660576ms
+[debug] [Loading] Done in /Users/ravikrovvidi/Documents/work/trueaccord_proj/project, returning: (trueaccord_proj-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 4.290573ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.007161ms
+[debug]         Load.loadUnit(file:/Users/ravikrovvidi/Documents/work/trueaccord_proj/project/, ...) took 23.779909ms
+[debug]       Load.apply: load took 24.771649ms
+[debug]       Load.apply: resolveProjects took 0.121092ms
+[debug]       Load.apply: finalTransforms took 7.595717ms
+[debug]       Load.apply: config.delegates took 0.396867ms
+[debug]       Load.apply: Def.make(settings)... took 74.729338ms
+[debug]       Load.apply: structureIndex took 23.530147ms
+[debug]       Load.apply: mkStreams took 0.001978ms
+[info] loading project definition from /Users/ravikrovvidi/Documents/work/trueaccord_proj/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 964.311496ms
+[debug]     Load.loadUnit: defsScala took 0.008434ms
+[debug] [Loading] Scanning directory /Users/ravikrovvidi/Documents/work/trueaccord_proj
+[debug]       Load.loadUnit: mkEval took 9.314964ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ravikrovvidi/Documents/work/trueaccord_proj, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.1082 ms
+[info] loading settings for project trueaccord_proj from build.sbt ...
+[debug]         Load.resolveProject(trueaccord_proj) took 1.824925ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id trueaccord_proj, base: /Users/ravikrovvidi/Documents/work/trueaccord_proj, plugins: List(<none>))) took 3.331447ms
+[debug] [Loading] Done in /Users/ravikrovvidi/Documents/work/trueaccord_proj, returning: (trueaccord_proj)
+[debug]     Load.loadUnit: loadedProjectsRaw took 2908.146386ms
+[debug]     Load.loadUnit: cleanEvalClasses took 8.659861ms
+[debug]   Load.loadUnit(file:/Users/ravikrovvidi/Documents/work/trueaccord_proj/, ...) took 3882.268368ms
+[debug] Load.apply: load took 3883.343037ms
+[debug] Load.apply: resolveProjects took 0.074624ms
+[debug] Load.apply: finalTransforms took 5.503469ms
+[debug] Load.apply: config.delegates took 0.28246ms
+[debug] Load.apply: Def.make(settings)... took 81.916243ms
+[debug] Load.apply: structureIndex took 20.312618ms
+[debug] Load.apply: mkStreams took 0.002067ms
+[info] set current project to trueaccord_proj (in build file:/Users/ravikrovvidi/Documents/work/trueaccord_proj/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///Users/ravikrovvidi/.sbt/1.0/server/d6e8f556d13d31b87db6/sock
+[info] started sbt server

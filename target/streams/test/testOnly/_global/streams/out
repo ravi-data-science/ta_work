@@ -1,0 +1,19 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TA_Work1Test, org.scalatest.tools.Framework$$anon$1@39af80d1, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTA_Work1Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt having a payment plan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have the flag isInPaymentPlan set to true[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt Not having a payment plan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have the flag isInPaymentPlan set to false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt remaining_amount[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be zero when amount_to_pay in paymentplan is zero[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt next_payment_due_date is null[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should if no payment plan[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDebt next_payment_due_date is null[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should if debt has been paid off[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 113 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 5, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TA_Work1Test[0m
