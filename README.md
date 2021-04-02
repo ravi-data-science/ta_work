@@ -16,10 +16,14 @@ b) 30 mins for documenting
 4) 
 Description of process - 
 a) Case classes defined 
-- Debts
-- PaymentPlans 
-- Payments
-b) 
+- Debts (getDebts method provides the list of debts reading from http service, parsed by net.liftweb.json package)
+- PaymentPlans (getPaymentPlans method provides the list of PaymentPlans reading from http service, parsed by net.liftweb.json package)
+- Payments (getPayments method provides the list of Payments reading from http service, parsed by net.liftweb.json package)
+
+
+b) TA_Work1.scala - Processing object having main method which calls the method 'processDebtPlanAndPayments' 
+c) Test case classes - TA_Work1Test.scala, DebtsTest.scala, PaymentPlansTest.scala, PaymentsTest.scala 
+
 5) what you think you would have done differently given more time.
 - Validation of test cases, Would have provided more test coverage , edge cases
 - consider the edge cases to think about mutability vs immutability of data/ variables
